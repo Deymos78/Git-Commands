@@ -85,7 +85,7 @@ git diff
 git diff --staged
 
 //Si queremos ver el estado del repositorio pero de una manera mas visual usaremos
-git status-s
+git status -s
 
 // Para mostrar los commits que hemos hecho usaremos 
 git log
