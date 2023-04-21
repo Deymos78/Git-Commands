@@ -1,0 +1,162 @@
+Configuracion Incial Git:
+
+//SIEMPRE USAR GIT BASH EN LUGAR DE LA TERMINAL DE CMD 
+
+git config --global user.name "<Nombre de Usuario>"
+git config --global user.email "<Email del Usuario>"
+// Como colocar VS code como editor de texto por defecto
+// --wait es para que nuestra terminal se quede esperando hasta que cerremos el editor de texto
+git config --global core.editor "code --wait"
+
+//Si queremos ver nuestro archivo de configuracion global escribimos lo siguiente
+git config --global -e
+
+// En Windows cada salto de linea, Windows agrega dos caracteres especiales para marca esa linea como
+// un salto de linea Carriage Return(CR), y tambien Line Feed(LN)
+// Cuando se es de Windows y se quiera subir codigo se debera eliminar los CR y cuando se descarga 
+// codigo de un repositorio se debera agregar el caracter de CR
+// Para ello hay que cambiar la configuracion de git, en especifico la propiedad core.autocrlf debe ser true
+// lo haremos con el siguiente comando
+git config --global core.autocrlf true 
+
+// Para ver las opciones de configuracion usaremos 
+git config -h
+
+//Para ver el listado de los archivos y carpetas de un determinado directorio, por defecto en el que nos encontramos
+ls
+
+//Para saber en que carpeta o directorio nos encontramos usamos
+pwd 
+//Para desplazarnos hacia una nueva carpeta usaremos
+cd [nombre_carpeta]
+
+//Para retroceder un paso en el directorio usamos 
+cd ..
+
+//Para crear un nuevo directorio usaremos 
+mkdir <nombre del directorio>
+
+// Para inicializar un nuevo respositorio de GIT en una carpeta local usamos
+git init
+
+//Para agregar archivos y cambiarlos al area de preparacion se utiliza el siguiente comando
+git add [Nombre_del_archivo]
+
+// Para agregar todos los archivos se usa 
+git add *
+
+// Cuando hayamos terminado de agregar los cambios al area de preparacion, tendremos que confirmar los cambios
+// agregados previamente al area de preparacion, cada confirmacion contiene un mensaje que describe los 
+// cambios realizados en esa confirmacion
+git commit -m ["Mensaje del commit"]
+
+// Para enviar los cambios de un repositorio local a un repositorio remoto usaremos el 
+git push [nombre_repositorio_remoto] [nombre_de_la_rama]
+
+// Para abrir una ventana de visual studio code en la carpeta que nos encontramos usamos 
+code .
+
+// Para ver el estado actual de nuestro repositorio usaremos
+git status
+
+//Para remover archivos del area de preparacion usaremos
+git rm --cached [files]
+
+// Para eliminar archivos usaremos el siguiente comando
+rm [nombre_del_archivo]
+
+//Para restaurar los archivos usaremos
+git restore [nombre_del_archivo]
+
+//Para eliminar un archivo y ademas enviarlo al area de preparacion usaremos
+git rm [nombre_del_archivo]
+
+//Para sacar archivos de la etapa de stage o area de preparacion usaremos
+git restore --staged [nombre_del_archivo]
+
+// Para renombrar archivos y agregarlos al area de preparacion
+git mv [nombre_del_archivo] [nuevo_nombre_archivo]
+
+// Cuando queramos ver las diferencias entre dos commits o ramas o los cambios realizados
+// usaremos lo siguiente
+git diff
+
+// Si queremos ver cuales son los cambios en la etapa de stage o area de preparacion usaremos
+git diff --staged
+
+//Si queremos ver el estado del repositorio pero de una manera mas visual usaremos
+git status-s
+
+// Para mostrar los commits que hemos hecho usaremos 
+git log
+
+// Si queremos mostrar los commits pero de una forma mas simplificada usaremos
+git log --oneline
+
+
++++++TRABAJANDO CON RAMAS+++++++
+
+// Para saber en que rama nos encontramos usaremos 
+git branch
+
+// Para crear una nueva rama usaremos 
+git checkout -b [nombre_de_la_rama]
+
+// Para mostrar el contenido de un archivo usaremos
+cat [nombre_del_archivo]
+
+// Para cambiar de rama usaremos
+git checkout [nombre_de_la_rama]
+
+// Para traernos los cambios de otra rama a la principal primero tendremos que posicionarnos en la 
+// rama principal antes de ejecutar el siguiente comando
+git merge [nombre_de_la_rama]
+
+// Para agregar un repositorio remoto llamado "origin" a nuestro repositorio Git usaremos
+git remote add origin https://github.com/Deymos78/miweb.git
+git remote add origin [url_del_origin]
+
+// Para subir al repositorio remoto los cambios que queremos subir usaremos el siguiente comando
+git push -u origin main
+git push -u(indicamos que queremos crear la rama) origin [nombre_de_la_rama_a_crear_en_repositorio]
+
+//Para ver las ramas remotas usamos
+git branch -r
+
+//Para ver las ramas locales  usamos
+git branch
+
+//Para actualizar rapidamente la rama local con los cambios en remoto y fusionarlos usaremos
+// Este comando hace dos pasos en uno, git fetch para traer los cambios en remoto y git merge para unir las 
+// ramas con los cambios 
+git pull
+
+//Para obtener los cambios del repositorio remoto pero sin fusionar las ramas usaremos
+git fetch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
