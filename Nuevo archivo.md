@@ -94,7 +94,7 @@ Ahora se veran links, se usan corchetes '[]' y el link en cuestion en "()" paren
 
 https://windblatt3d.com/
 
-(pagina web modelos 3d)[https://windblatt3d.com/]
+[pagina web modelos 3d](https://windblatt3d.com/)
 
 
 
