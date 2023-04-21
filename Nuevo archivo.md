@@ -88,13 +88,13 @@ export const getGifs = async(category) => {
 ~~~ 
 
 
-Ahora se veran links, se usan corchetes '[]'
+Ahora se veran links, se usan corchetes '[]' y el link en cuestion en "()" parentesis
 
 **Enlace a pagina web WindBlatt3d**
 
 https://windblatt3d.com/
 
-[https://windblatt3d.com/]
+(pagina web modelos 3d)[https://windblatt3d.com/]
 
 
 
