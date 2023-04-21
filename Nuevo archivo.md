@@ -30,6 +30,8 @@ Otro ejemplo de lista
 
 * Elemento 3
 
+___
+
 Aqui va otro elemento de lista ejemplo
 
 + Elemento 1
@@ -37,6 +39,8 @@ Aqui va otro elemento de lista ejemplo
 + Elemento 2
 
 + Elemento 3
+
+---
 
 
 Aqui viene un ejemplo de listas anidadas
@@ -57,6 +61,8 @@ Al texto en Markdown puedes añadirle formato como **negrita** o *cursiva* de un
 
 
 > Esta es una cita de una civilizacion antigua. -Tu madre
+
+***
 
 
 Ahora crearemos codigo encapsulado
@@ -79,8 +85,10 @@ export const getGifs = async(category) => {
 
     return gifs;
 }
-
 ~~~ 
+
+
+
 
 
 
