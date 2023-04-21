@@ -97,7 +97,9 @@ Ahora se veran links, se usan corchetes '[]' y el link en cuestion en "()" paren
 
 Ahora colocaremos una linea de codigo
 
-Esta es una linea de codigo la siguiente `console.log('Nueva caractetistica')`
+De la siguiente forma se puede colocar codigo en la misma linea `console.log('Nueva caractetistica')`
+
+	console.log('Nuevo codigo')
 
 
 
